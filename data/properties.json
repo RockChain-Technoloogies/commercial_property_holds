@@ -1,26 +1,112 @@
-﻿[
+[
   {
-    "name": "IT Park",
-    "location": "Nagpur",
+    "name": "Nagpur IT Park",
+    "location": "IT Park, Nagpur",
     "status": "active",
-    "value": "â‚¹8.4 Cr",
+    "value": "\u20b98.4 Cr",
+    "purchasedYearValue": "\u20b94.5 Cr",
     "irr": "14.8%",
-    "minInvestment": "â‚¹2,00,000"
+    "tenure": "3 years",
+    "minInvestment": "\u20b92 L",
+    "maxInvestment": "\u20b910 L"
   },
   {
     "name": "Dhantoli Commercial Building",
-    "location": "Nagpur",
+    "location": "Dhantoli, Nagpur",
     "status": "upcoming",
-    "value": "â‚¹12.1 Cr",
+    "value": "\u20b912.1 Cr",
+    "purchasedYearValue": "\u20b98.5 Cr",
     "irr": "16.2%",
-    "minInvestment": "â‚¹2,00,000"
+    "tenure": "3 years",
+    "minInvestment": "\u20b92 L",
+    "maxInvestment": "\u20b910 L"
   },
   {
     "name": "Sadar Business Tower",
-    "location": "Nagpur",
+    "location": "Sadar, Nagpur",
     "status": "invested",
-    "value": "â‚¹6.7 Cr",
+    "value": "\u20b96.7 Cr",
+    "purchasedYearValue": "\u20b94.8 Cr",
     "irr": "13.1%",
-    "minInvestment": "â‚¹2,00,000"
+    "tenure": "3 years",
+    "minInvestment": "\u20b92 L",
+    "maxInvestment": "\u20b910 L"
+  },
+  {
+    "name": "MIHAN Logistics Park",
+    "location": "MIHAN, Nagpur",
+    "status": "active",
+    "value": "\u20b99.6 Cr",
+    "purchasedYearValue": "\u20b96.1 Cr",
+    "irr": "15.4%",
+    "tenure": "3 years",
+    "minInvestment": "\u20b92 L",
+    "maxInvestment": "\u20b910 L"
+  },
+  {
+    "name": "Wardha Road Retail Hub",
+    "location": "Wardha Road, Nagpur",
+    "status": "active",
+    "value": "\u20b95.8 Cr",
+    "purchasedYearValue": "\u20b93.6 Cr",
+    "irr": "12.9%",
+    "tenure": "3 years",
+    "minInvestment": "\u20b92 L",
+    "maxInvestment": "\u20b910 L"
+  },
+  {
+    "name": "Butibori Industrial Estate",
+    "location": "Butibori, Nagpur",
+    "status": "active",
+    "value": "\u20b97.2 Cr",
+    "purchasedYearValue": "\u20b94.4 Cr",
+    "irr": "14.1%",
+    "tenure": "3 years",
+    "minInvestment": "\u20b92 L",
+    "maxInvestment": "\u20b910 L"
+  },
+  {
+    "name": "Civil Lines Commercial Block",
+    "location": "Civil Lines, Nagpur",
+    "status": "invested",
+    "value": "\u20b911.3 Cr",
+    "purchasedYearValue": "\u20b97.2 Cr",
+    "irr": "15.8%",
+    "tenure": "3 years",
+    "minInvestment": "\u20b92 L",
+    "maxInvestment": "\u20b910 L"
+  },
+  {
+    "name": "Sitabuldi High Street",
+    "location": "Sitabuldi, Nagpur",
+    "status": "invested",
+    "value": "\u20b96.2 Cr",
+    "purchasedYearValue": "\u20b93.9 Cr",
+    "irr": "13.7%",
+    "tenure": "3 years",
+    "minInvestment": "\u20b92 L",
+    "maxInvestment": "\u20b910 L"
+  },
+  {
+    "name": "Airport South Business Plot",
+    "location": "Airport South, Nagpur",
+    "status": "upcoming",
+    "value": "\u20b910.4 Cr",
+    "purchasedYearValue": "\u20b96.6 Cr",
+    "irr": "16.5%",
+    "tenure": "3 years",
+    "minInvestment": "\u20b92 L",
+    "maxInvestment": "\u20b910 L"
+  },
+  {
+    "name": "Kamptee Road Warehouse Zone",
+    "location": "Kamptee Road, Nagpur",
+    "status": "upcoming",
+    "value": "\u20b94.9 Cr",
+    "purchasedYearValue": "\u20b93.1 Cr",
+    "irr": "12.6%",
+    "tenure": "3 years",
+    "minInvestment": "\u20b92 L",
+    "maxInvestment": "\u20b910 L"
   }
 ]
