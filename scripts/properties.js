@@ -1,5 +1,5 @@
 window.App = window.App || {};
 
 window.App.propertyState = {
-  minimumShareValue: 5000,
+  minimumShareValue: 200000,
 };

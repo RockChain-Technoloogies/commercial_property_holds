@@ -5,7 +5,7 @@
     "status": "active",
     "value": "â‚¹8.4 Cr",
     "irr": "14.8%",
-    "minInvestment": "â‚¹5,000"
+    "minInvestment": "â‚¹2,00,000"
   },
   {
     "name": "Whitefield Growth Zone",
@@ -13,7 +13,7 @@
     "status": "new",
     "value": "â‚¹12.1 Cr",
     "irr": "16.2%",
-    "minInvestment": "â‚¹10,000"
+    "minInvestment": "â‚¹2,00,000"
   },
   {
     "name": "ORR Industrial Strip",
@@ -21,6 +21,6 @@
     "status": "active",
     "value": "â‚¹6.7 Cr",
     "irr": "13.1%",
-    "minInvestment": "â‚¹5,000"
+    "minInvestment": "â‚¹2,00,000"
   }
 ]

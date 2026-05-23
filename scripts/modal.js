@@ -38,13 +38,13 @@ function closeModal(event) {
 function calcShares() {
   const amt = parseFloat(document.getElementById('modalAmount').value);
 
-  if (!amt || amt < 5000) {
+  if (!amt || amt < 200000) {
     document.getElementById('sharesOut').textContent = '—';
     document.getElementById('incomeOut').textContent = '—';
     return;
   }
 
-  const shares = Math.floor(amt / 5000);
+  const shares = Math.floor(amt / 200000);
   const income = Math.round(amt * (currentIrr / 100));
   document.getElementById('sharesOut').textContent = shares.toLocaleString('en-IN') + ' shares';
   document.getElementById('incomeOut').textContent = '₹' + income.toLocaleString('en-IN') + '/yr';
