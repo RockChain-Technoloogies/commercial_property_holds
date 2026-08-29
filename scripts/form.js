@@ -1,28 +1,32 @@
-const telegram_bot_id = '8704884272:AAGagkO7hq-_qJRF6yn0BZX-7gTiZMx8XJA';
-const chat_id = 5211441236;
+const LEAD_GATEWAY_URL = 'https://lead-gateway-henna.vercel.app/api/leads';
+const LEAD_GATEWAY_API_KEY = 'b0ffff3c2299551401bdfcf35ea9be8283c0aab612cc0241c5d813e4f0f2a393';
 
 function getContactField(id) {
   return document.getElementById(id);
 }
 
-function buildTelegramMessage() {
+function buildLeadPayload() {
   const firstName = getContactField('name')?.value.trim() || '';
   const lastName = getContactField('last-name')?.value.trim() || '';
   const email = getContactField('email')?.value.trim() || '';
   const phone = getContactField('phone')?.value.trim() || '';
-  const service = getContactField('service')?.value.trim() || '';
+  const investmentBudget = getContactField('service')?.value.trim() || '';
   const message = getContactField('message')?.value.trim() || '';
-  const fullName = [firstName, lastName].filter(Boolean).join(' ');
 
-  return [
-    'New Inquiry from Commercial Property Holds:',
-    '',
-    'Name: ' + fullName,
-    'Email: ' + email,
-    'Phone: ' + phone,
-    'Investment Budget: ' + service,
-    'Message: ' + (message || 'No message provided'),
-  ].join('\n');
+  return {
+    // This is the website identifier configured in the lead gateway.
+    website: 'website-a',
+    source: 'contact-form',
+    name: [firstName, lastName].filter(Boolean).join(' '),
+    email,
+    phone,
+    company: 'Commercial Property Holds',
+    message: [
+      message,
+      investmentBudget && `Investment budget: ${investmentBudget}`,
+      `Submitted from: ${window.location.href}`,
+    ].filter(Boolean).join('\n'),
+  };
 }
 
 function showModal(message) {
@@ -50,24 +54,22 @@ function closeAlertModal() {
   modal.setAttribute('aria-hidden', 'true');
 }
 
-async function sender(message) {
-  const response = await fetch('https://api.telegram.org/bot' + telegram_bot_id + '/sendMessage', {
+async function sendLead(payload) {
+  const response = await fetch(LEAD_GATEWAY_URL, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
-      'cache-control': 'no-cache',
+      'x-api-key': LEAD_GATEWAY_API_KEY,
     },
-    body: JSON.stringify({
-      chat_id,
-      text: message,
-    }),
+    body: JSON.stringify(payload),
   });
 
   if (!response.ok) {
-    throw new Error('Telegram request failed');
+    const errorDetail = await response.text().catch(() => '');
+    throw new Error(`Lead gateway request failed (${response.status})${errorDetail ? `: ${errorDetail}` : ''}`);
   }
 
-  return response.json();
+  return response.json().catch(() => null);
 }
 
 async function handleSubmit(event) {
@@ -75,22 +77,21 @@ async function handleSubmit(event) {
 
   const form = event.target.closest('form') || document.getElementById('contact-form');
   const button = form?.querySelector('.form-submit');
-  const defaultText = 'Send Message & Get a Callback →';
+  const defaultText = button?.textContent;
 
   if (!form || !button) {
     return;
   }
 
-  const message = buildTelegramMessage();
-
   button.disabled = true;
   button.textContent = 'Sending...';
 
   try {
-    await sender(message);
+    await sendLead(buildLeadPayload());
     showModal('Your message has been sent successfully!');
     form.reset();
   } catch (error) {
+    console.error('Unable to send lead:', error);
     showModal('There was an error sending your message. Please try again.');
   } finally {
     button.disabled = false;
