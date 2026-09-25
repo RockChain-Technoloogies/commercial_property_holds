@@ -46,7 +46,7 @@ nav {
 }
 
 .nav-logo-text {
-  font-family: 'Space Grotesk', sans-serif;
+  font-family: var(--font-display);
   font-size: 1rem;
   font-weight: 700;
   letter-spacing: -0.02em;

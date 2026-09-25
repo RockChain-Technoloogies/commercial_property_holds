@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title">
+  <title id="title">Commercial Property Holds</title>
+  <rect width="64" height="64" rx="14" fill="#080C0F"/>
+  <path d="M14 49V28l18-12 18 12v21H14Z" fill="#00D4A0"/>
+  <path d="M21 43V31h6v12m-6-8h6m4 8V31h6v12m-6-8h6" fill="none" stroke="#080C0F" stroke-width="3" stroke-linecap="square"/>
+  <path d="M11 51h42" fill="none" stroke="#00FFBF" stroke-width="3" stroke-linecap="round"/>
+</svg>
