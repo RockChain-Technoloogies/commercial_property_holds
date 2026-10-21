@@ -59,8 +59,8 @@
   .form-group input:focus,
   .form-group select:focus,
   .form-group textarea:focus {
-    border-color: rgba(0,212,160,0.4);
-    box-shadow: 0 0 0 3px rgba(0,212,160,0.08);
+    border-color: rgba(216,154,78,0.5);
+    box-shadow: 0 0 0 3px rgba(216,154,78,0.10);
   }
   .form-group select { appearance: none; cursor: pointer; }
   .form-group textarea { resize: vertical; min-height: 120px; }
@@ -81,7 +81,7 @@
     letter-spacing: 0.01em;
     margin-top: 0.5rem;
   }
-  .form-submit:hover { background: var(--accent-hover); box-shadow: 0 4px 20px rgba(0,212,160,0.3); }
+  .form-submit:hover { background: var(--accent-hover); box-shadow: 0 4px 20px rgba(216,154,78,0.3); }
   .form-submit:disabled {
     cursor: wait;
     opacity: 0.7;

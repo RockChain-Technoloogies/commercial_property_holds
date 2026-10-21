@@ -125,7 +125,7 @@ nav {
 }
 
 .theme-toggle:hover {
-  border-color: rgba(0, 212, 160, 0.35);
+  border-color: rgba(216, 154, 78, 0.45);
   background: var(--bg3);
   transform: translateY(-1px);
 }

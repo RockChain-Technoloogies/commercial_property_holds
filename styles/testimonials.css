@@ -44,7 +44,7 @@
     font-size: 0.9rem;
     font-weight: 700;
     color: var(--accent);
-    border: 1px solid rgba(0,212,160,0.2);
+    border: 1px solid rgba(216,154,78,0.25);
   }
   .author-name { font-weight: 500; font-size: 0.875rem; margin-bottom: 2px; }
   .author-meta { font-size: 0.75rem; color: var(--text3); }
