@@ -38,10 +38,17 @@ nav {
   max-width: 320px;
 }
 
+.logo-mark {
+  width: 56px;
+  aspect-ratio: 1383 / 1137;
+  display: block;
+  flex-shrink: 0;
+}
+
 .nav-logo-img {
-  width: 38px;
-  height: 38px;
-  object-fit: contain;
+  display: block;
+  width: 100%;
+  height: auto;
   flex-shrink: 0;
 }
 
@@ -194,9 +201,8 @@ nav {
     max-width: 180px;
   }
 
-  .nav-logo-img {
-    width: 34px;
-    height: 34px;
+  .logo-mark {
+    width: 52px;
   }
 
   .nav-logo-text {
