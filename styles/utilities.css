@@ -20,7 +20,7 @@
     letter-spacing: 0.04em;
   }
   .ticker-item b { color: var(--accent); font-weight: 500; }
-  .ticker-item .up { color: #00D4A0; }
+  .ticker-item .up { color: var(--accent); }
   .ticker-item .down { color: #FF6B5B; }
   @keyframes ticker { from { transform: translateX(0); } to { transform: translateX(-50%); } }
 

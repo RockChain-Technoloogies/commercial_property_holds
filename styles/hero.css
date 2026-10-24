@@ -15,15 +15,15 @@
   .hero-grid-bg {
     position: absolute; inset: 0; pointer-events: none;
     background-image:
-      linear-gradient(rgba(0,212,160,0.03) 1px, transparent 1px),
-      linear-gradient(90deg, rgba(0,212,160,0.03) 1px, transparent 1px);
+      linear-gradient(rgba(216,154,78,0.04) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(216,154,78,0.04) 1px, transparent 1px);
     background-size: 60px 60px;
     mask-image: radial-gradient(ellipse 80% 70% at 50% 40%, black 20%, transparent 80%);
   }
   .hero-orb1 {
     position: absolute; top: 20%; left: 60%;
     width: 600px; height: 600px; border-radius: 50%;
-    background: radial-gradient(circle, rgba(0,212,160,0.08) 0%, transparent 70%);
+    background: radial-gradient(circle, rgba(216,154,78,0.09) 0%, transparent 70%);
     pointer-events: none;
   }
   .hero-orb2 {
@@ -35,7 +35,7 @@
   .hero-tag {
     display: inline-flex; align-items: center; gap: 8px;
     background: var(--accent3);
-    border: 1px solid rgba(0,212,160,0.25);
+    border: 1px solid rgba(216,154,78,0.32);
     color: var(--accent);
     font-family: var(--font-mono);
     font-size: 0.75rem;
@@ -100,7 +100,7 @@
     transition: all 0.2s;
     letter-spacing: 0.01em;
   }
-  .btn-primary:hover { background: var(--accent-hover); transform: translateY(-2px); box-shadow: 0 8px 30px rgba(0,212,160,0.3); }
+  .btn-primary:hover { background: var(--accent-hover); transform: translateY(-2px); box-shadow: 0 8px 30px rgba(216,154,78,0.3); }
   .btn-secondary {
     display: inline-flex; align-items: center; gap: 8px;
     background: transparent;

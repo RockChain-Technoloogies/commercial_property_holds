@@ -20,8 +20,8 @@
   }
   .pricing-card:hover { transform: translateY(-4px); border-color: var(--border2); }
   .pricing-card.featured {
-    border-color: rgba(0,212,160,0.4);
-    background: linear-gradient(135deg, var(--bg3), rgba(0,212,160,0.04));
+    border-color: rgba(216,154,78,0.48);
+    background: linear-gradient(135deg, var(--bg3), rgba(216,154,78,0.06));
   }
   .pricing-card.featured::after {
     content: 'Most Popular';
@@ -77,9 +77,9 @@
     content: '';
     width: 16px; height: 16px; border-radius: 50%;
     background: var(--accent3);
-    border: 1px solid rgba(0,212,160,0.3);
+    border: 1px solid rgba(216,154,78,0.35);
     flex-shrink: 0;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='8' viewBox='0 0 10 8'%3E%3Cpath d='M1 4l3 3 5-6' stroke='%2300D4A0' stroke-width='1.5' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='8' viewBox='0 0 10 8'%3E%3Cpath d='M1 4l3 3 5-6' stroke='%23D89A4E' stroke-width='1.5' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
     background-repeat: no-repeat;
     background-position: center;
   }
@@ -104,4 +104,4 @@
     color: var(--button-text);
     border: none;
   }
-  .plan-cta-solid:hover { background: var(--accent-hover); box-shadow: 0 4px 20px rgba(0,212,160,0.3); }
+  .plan-cta-solid:hover { background: var(--accent-hover); box-shadow: 0 4px 20px rgba(216,154,78,0.3); }
